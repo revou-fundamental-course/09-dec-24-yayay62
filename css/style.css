@@ -1,1 +1,79 @@
-/* Ini Css */
+.main-header {
+    display:flex;
+    justify-content:space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav > a {
+    border: 1px solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.home-icon {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color: aliceblue;
+    background-image: url(https://img.freepik.com/free-vector/detailed-travel-logo_23-2148627268.jpg?ga=GA1.1.1559308355.1734248966&semt=ais_hybrid)
+
+}
+
+.banner-img {
+    height: 360px;
+    background-image: url(https://img.freepik.com/free-photo/balinese-people-traditional-clothes-religious-ceremony-pura-taman-ayun-temple-bali-indonesia_335224-390.jpg?t=st=1734330411~exp=1734334011~hmac=f7b040d32b2737f42964fd6e2d2368a122c6c643ddcaecfe8b344c02028d3b0b&w=740);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-header {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 24px;
+}
+
+.main-item {
+    flex: 1;
+}
+
+form {
+    background-color: aliceblue;
+}
+
+.p-form {
+    text-align: center;
+    font-size: 25px;
+}
+
+.main-form {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.destination-select {
+    font-size: 20px;
+}
+
+.-our-packages-header {
+    background-color: aliceblue;
+    margin-top: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+footer {
+    margin-top: 24px;
+    text-align: center;
+}
