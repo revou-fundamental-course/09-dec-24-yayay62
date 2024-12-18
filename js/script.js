@@ -1,6 +1,6 @@
-// ini Javascript
+// Ini Javascript
 
-// AutoSlider
+// Banner Autoslide
 
 document.addEventListener("DOMContentLoaded", function () {
   let currentIndex = 0;
@@ -8,13 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalSlides = slides.length;
 
   function showNextSlide() {
-    // Menyembunyikan gambar sebelumnya
     slides[currentIndex].classList.remove("active");
-
-    // Mengubah indeks gambar berikutnya
     currentIndex = (currentIndex + 1) % totalSlides;
-
-    // Menampilkan gambar berikutnya
     slides[currentIndex].classList.add("active");
   }
 
@@ -53,6 +48,7 @@ document
       alert("Please select an interest from the dropdown!");
       return;
     }
+  });
 
 // Fungsi untuk validasi email
 function validateEmail(email) {
