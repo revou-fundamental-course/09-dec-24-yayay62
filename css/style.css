@@ -1,38 +1,76 @@
-.main-header {
-    display:flex;
-    justify-content:space-between;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+    font-family: "Poppins", sans-serif; 
+}
+
+.main-logo {
+  height: 75px;
+  width: 75px;
+  background-size: cover;
+  background-position: center;
+  background-color: aliceblue;
+  background-image: url(https://img.freepik.com/free-vector/detailed-travel-logo_23-2148627268.jpg?ga=GA1.1.1559308355.1734248966&semt=ais_hybrid);
+}
+
+.main-header {
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navbar */
 nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav > a {
-    border: 1px solid;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    text-decoration: none;
-    color: black;
+  border: 1px solid;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
 }
 
-.home-icon {
-    height: 50px;
-    width: 50px;
-    background-size: cover;
-    background-position: center;
-    background-color: aliceblue;
-    background-image: url(https://img.freepik.com/free-vector/detailed-travel-logo_23-2148627268.jpg?ga=GA1.1.1559308355.1734248966&semt=ais_hybrid)
-
+.main-article-header {
+  text-align: center;
 }
+
+.main-article {
+  display: flex;
+  justify-content: space-evenly;
+  header,
+}
+
+/* banner */
 
 .banner-img {
-    height: 360px;
-    background-image: url(https://img.freepik.com/free-photo/balinese-people-traditional-clothes-religious-ceremony-pura-taman-ayun-temple-bali-indonesia_335224-390.jpg?t=st=1734330411~exp=1734334011~hmac=f7b040d32b2737f42964fd6e2d2368a122c6c643ddcaecfe8b344c02028d3b0b&w=740);
-    background-size: cover;
-    background-position: center;
+  border-radius: 10px;
+  height: 520px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.banner-slide {
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+  position: relative;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.banner-slide.active {
+  opacity: 1;
 }
 
 .content-header {
@@ -50,30 +88,98 @@ nav > a {
 
 form {
     background-color: aliceblue;
-}
+  }
+  
+  .destination-select {
+    font-size: 18px;
+  }
 
-.p-form {
+  .contact-header {
     text-align: center;
-    font-size: 25px;
-}
-
-.main-form {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(39, 37, 37);
+  }
+  
+  .contact-message {
     margin-left: 30px;
-    font-size: 20px;
-}
+    font-size: 15px;
+    font-style: italic;
+    color: #767a7e;
+  }
+  
 
-.destination-select {
-    font-size: 20px;
-}
 
-.-our-packages-header {
+  /* Packages Section */
+
+.our-package-header {
     background-color: aliceblue;
-    margin-top: 24px;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    margin-top: 25px;
+    padding: 60px 0px;
+    text-align: center;
+    font-size: larger;
 }
+
+.our-package-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+
+.feature > h2 {
+  font-size: 18px;
+  color: #343a40;
+  margin: 10px 0;
+}
+
+.feature > p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Call Us section */
+
+.call-us-content {
+  padding: 40px;
+  text-align: center;
+  font-size: larger;
+}
+
+.call-us-content > h1 {
+  color: rgb(67, 65, 65);
+}
+
+.call-us-content > p {
+  font-size: smaller;
+  color: #6c757d;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: rgb(67, 65, 65);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(56, 55, 55);
+}
+
+
 
 footer {
-    margin-top: 24px;
     text-align: center;
 }

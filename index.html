@@ -1,86 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel</title>
-    <link rel="stylesheet" href="css\style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelay</title>
 
-<body>
+    <!-- Ini Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ini CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
     <header class="main-header">
-        <div class="home-icon"></div>
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="our-packages-section">Our Packages</a>
-            <a href="#">Call Us</a>
-        </nav>
+      <div class="main-logo"></div>
+      <!-- Navbar Start -->
+      <nav>
+        <a href="" class="active">Home</a>
+        <a href="">Our Package</a>
+        <a href="">Call Us</a>
+      </nav>
     </header>
+    <!-- Navbar end -->
 
-    <hr>
+    <hr />
 
-    <body>
-        <header class="content-header">
-        <h1>Your Trusted Travel Agent's</h1>
-        <h3> Experience The World With Us</h3>
-    </header>
+    <main>
+      <header class="main-article-header">
+        <h1>Your Trusted Travel Agent</h1>
+        <h3>Your hapiness is our hapiness. Experience the World With Us</h3>
+      </header>
 
-    <!--main content-->
-    <section class="main-container">
+      <!--Konten Utama-->
+      <section class="main-article">
         <!-- banner autoslide content -->
-        <aside class="main-item">
-            <div class="banner-img"></div><br>
-            <p style="font-size: 20px;">"Perjalanan anda menjadi mengesankan bersama Travel Agentku."</p>
-            <i class="glyphicon glyphicon-user" style="font-size: 24px;"></i>
+        <aside class="main-article-banner">
+          <div class="banner-img"></div>
+            <img class="banner-slide" src="assets/gambarbali2.avif" alt="banner1">
+            <img class="banner-slide" src="assets/gambarthai2.avif" alt="banner2">
+            <img class="banner-slide" src="assets/gambarsub2.avif" alt="banner3">
+            <img class="banner-slide" src="assets/gambarsing.avif" alt="banner4">
+            <br />
+          <p style="font-size: 18px"><i> 
+            "Perjalanan anda menjadi mengesankan bersama Travel Kami."
+          </p></i>
         </aside>
 
-        <!-- Form -->
-        <form class="main-item">
-            <div class="p-form">
-            <h3>Contact Us</h3>
-            <p style="font: size 25px;">Kami akan segera menghubungi anda</p>
-            </div>
-            <div class="main-form">
-                <label for="fname">Your name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                
-                <label for="email">Email Address:</label><br>
-                <input type="text" id="email" name="email"><br>
-                
-                <label for="destination">Select Your Interested In:</label><br>
-                <select id="destination" name="destination" style="font-size: 15px">
-                    <option selected>Select option</option>
-                    <option value="bali">Bali</option>
-                    <option value="bandung">Bandung</option>
-                    <option value="japan">Japan</option>
-                    <option value="singapore">Singapore</option>
-                    <option value="thailand">Thailand</option>
-                    <option value="surabaya">Surabaya</option>
-                </select>
-                <button style="font-size:15px">Send</button>
-            </div>
-        </form>
-    </section>
-    
+        <!-- Form name destination -->
+        <form id="contactForm" class="main-item">
+          <h2 class="contact-header">Contact Us</h2>
+          <p class="contact-message">Kami akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+          <div class="form-field">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" placeholder="First and last name" required>
+          </div>
+          <div class="form-field">
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
+          </div>
+          <div class="form-field">
+              <label for="destination">Destination</label>
+              <select id="destination" name="destination" required>
+                  <option value="">Select an option</option>
+                  <option value="bali">Bali</option>
+                  <option value="bandung">Bandung</option>
+                  <option value="jakarta">Jakarta</option>
+                  <option value="singapore">Singapura</option>
+                  <option value="thailand">Thailand</option>
+                  <option value="jepang">Jepang</option>
+                  <option value="australia">Australia</option>
+              </select>
+          </div>
+          
+          <button type="submit" class="btn">SEND</button>
+      </form>
+  </section>
+
+
+      <!-- Testimonial -->
+      <section class="testi-section">
+        <h1>Testimoni</h1>
         <div>
+            <img src="assets\profil.png" width="30px" height="
+            30px" class="img-profil"class="nama"> <i>Florence Hughes, ibu rumah tangga, 28</i></div>
+        <div class="container-testimonial">
+            <p class="testi-item">"Liburan yang berkesan bagi saya menggunakan travel ini."</p>
+        </section>
+        <br/>
+        <br/>
 
-        </div>
-    </header>
-    </div>
-    <!--Our Packages Content-->
-    <section id="our-packages-section">
-        <header class="content-header our-packages-header">
-                <h1>Our Packages</h1>
+      <!-- Service -->
+      <section class="service-section">
+        <h1>Fasilitas yang akan didapatkan</h1>
+        <div class="pertama">
+            <img src="assets\angka1.png" width="25px" height="
+            25px" class="img-angka"class="angka1">   
+            Jadwal keberangkatan yang fleksibel
+        <br/>
+        <br/>
+            <div class="pertama">
+                <img src="assets\angka2.png" width="25px" height="
+                25px" class="img-angka"class="angka1"> 
+            Layanan antar-jemput gratis
+        <br/>
+        <br/>
+            <div class="pertama">
+            <img src="assets\angka3.png" width="25px" height="
+            25px" class="img-angka"class="angka1"> 
+            Tur Pribadi dengan Pemandu Lokal
+      </section>
+
+      <!-- Our Packages -->
+      <section id="our-package">
+        <header class="our-package-header">
+          <h1>Our Packages</h1>
         </header>
-    </section>
 
-</body>
+        <section class="our-package-container">
 
-    <footer>
-        <span>Made by Aya@2024</span>
-    </footer>
+          <div class="feature">
+            <img src="assets/logobali2.png" >
+            <h2>-Bali-</h2>
+            <p >Menikmati keindahan alam Bali yang sangat menakjubkan</p>
+          </div>
 
-</body>
+          <div class="feature">
+            <img src="assets/logojogja.png">
+            <h2>-Yogyakarta-</h2>
+            <p>Keberagaman budaya yang disuguhkan 
+              dapat memberi kesan yang berbeda pada liburan anda</p>
+          </div>
+            
+            <div class="feature">
+              <img src="assets/logobandung.png">
+              <h2>-Bandung-</h2>
+              <p>Budaya yang beragam ada di Bandung 
+                dan juga keindahan alam yang disuguhkan</p>
+            </div>
 
+            <div class="feature">
+              <img src="assets/logojkt.png">
+              <h2>-Jakarta-</h2>
+              <p>Kemegahan gedung tinggi akan memberikan pengalaman
+                liburan yang berbeda</p>
+            </div>
+
+            <div class="feature">
+              <img src="assets/logoaus.png">
+              <h2>-Australia-</h2>
+              <p>Flora dan Fauna yang berbeda dengan benua asia 
+                akan memberi kesan mendalam bagi anda </p>
+            </div>
+
+            <div class="feature">
+              <img src="assets/logothai.png">
+              <h2>-Thailand-</h2>
+              <p>Jelajahi budaya yang beragam ada di Thailand 
+                dan juga keindahan alam yang disuguhkan</p>
+            </div>
+
+            <div class="feature">
+              <img src="assets/logojepang.png">
+              <h2>-Jepang-</h2>
+              <p>Atmosfer yang berbeda akan anda rasakan 
+                saat mengeksplorasi Jepang</p>
+            </div>
+
+            <div class="feature">
+              <img src="assets/logosingapura.png">
+              <h2>-Singapura-</h2>
+              <p>Kultur budaya yang beragam akan memberikan 
+                kesan tersendiri dalam liburan anda</p>
+            </div>
+
+            </section>
+              
+      
+    <!-- Call Us -->
+    <section class="call-us-content" id="call-us-section">
+      <h1>Get in Touch with Us!</h1>
+      <p>Jika Anda memiliki pertanyaan atau ingin memesan paket wisata, jangan ragu untuk menghubungi kami.</p>
+      <br>
+      <a href="#" class="btn">CALL TO ACTION</a>
+   </section>
+   </main>
+
+   <hr/>
+
+    <!-- Footer -->
+    <footer class="footer-end">
+  <div class="di-end">
+      <p>Terms and service</p>
+      <p>Privacy policy</p>
+  </div>
+  <div class="di-end2">
+      <p>Aya@2024</p>
+  </div>
+  </footer>
+
+   
+
+    <script src="js/script.js"></script>
+    
+  </body>
 </html>
