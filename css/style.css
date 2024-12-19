@@ -179,6 +179,17 @@ form {
 }
 
 
+@media only screen and (max-width: 480px) {
+  .main-header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .main-article {
+    flex-direction: column;
+}
 
 footer {
     text-align: center;
